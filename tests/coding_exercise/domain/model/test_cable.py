@@ -12,9 +12,7 @@ def test_should_have_length():
 
 
 def test_should_raise_error_if_float_provided_for_length():
-    given_length = 101.101
-
-    assert_that(Cable).raises(ValueError).when_called_with(given_length)
+    assert_that(Cable).raises(ValueError).when_called_with(101.101)
 
 
 def test_should_raise_error_if_none_provided_for_length():
@@ -22,12 +20,8 @@ def test_should_raise_error_if_none_provided_for_length():
 
 
 def test_should_raise_error_if_negative_provided_for_length():
-    given_length = -101
-
-    assert_that(Cable).raises(ValueError).when_called_with(given_length)
+    assert_that(Cable).raises(ValueError).when_called_with(-101)
 
 
 def test_should_raise_error_if_greater_than_maxsize_provided_for_length():
-    given_length = sys.maxsize + 1
-
-    assert_that(Cable).raises(ValueError).when_called_with(given_length)
+    assert_that(Cable).raises(ValueError).when_called_with(sys.maxsize + 1)

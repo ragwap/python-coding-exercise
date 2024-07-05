@@ -15,6 +15,14 @@ This class has the following attributes provided as constructor arguments:
 
 The new behaviour we are asking you to write is to create a class that will split a cable into ``n`` number of parts.
 
+An empty implementation has been put in place in the following::
+
+    ./src/coding_exercise/application/splitter.py
+
+The associated tests are in::
+
+    ./tests/coding_exercise/application/test_splitter.py
+
 The rules are:
 
 * lengths of the returned ``Cable`` are to be equal
