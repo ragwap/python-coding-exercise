@@ -4,7 +4,8 @@ from assertpy import assert_that
 
 from coding_exercise.application.splitter import Splitter
 
-SPLIT_SIGNATURE = "(self, cable: coding_exercise.domain.model.cable.Cable, times: int)"
+CABLE_CLASS = "coding_exercise.domain.model.cable.Cable"
+SPLIT_SIGNATURE = f"(self, cable: {CABLE_CLASS}, times: int) -> list[{CABLE_CLASS}]"
 
 
 def test_should_have_split_method():
