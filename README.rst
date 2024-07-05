@@ -1,5 +1,26 @@
     Coding exercise for Python engineering roles at `Onlife <https://on.life/>`_.
 
+The Problem
+===========
+
+We have provided a basic project with some domain models for you to use to deliver a new piece of behaviour.
+
+The project includes the following domain model::
+
+    ./src/coding_exercise/domain/model/cable.py
+
+This class has the following attributes provided as constructor arguments:
+
+* ``length:int``
+
+The new behaviour we are asking you to write is to create a class that will split a cable into ``n`` number of parts.
+
+The rules are:
+
+* lengths of the returned ``Cable`` are to be equal
+
+  + if the length cannot be split equally the last ``Cable`` in the result should be longer
+
 Test
 ====
 
@@ -23,7 +44,6 @@ Tested Configuration
 --------------------
 
 ========== =======
----------- -------
 Technology Version
 ========== =======
 os         ``macOS 14.5``
