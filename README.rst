@@ -1,49 +1,34 @@
-.. These are examples of badges you might want to add to your README:
-   please update the URLs accordingly
+    Coding exercise for Python engineering roles at `Onlife <https://on.life/>`_.
 
-    .. image:: https://api.cirrus-ci.com/github/<USER>/coding-exercise.svg?branch=main
-        :alt: Built Status
-        :target: https://cirrus-ci.com/github/<USER>/coding-exercise
-    .. image:: https://readthedocs.org/projects/coding-exercise/badge/?version=latest
-        :alt: ReadTheDocs
-        :target: https://coding-exercise.readthedocs.io/en/stable/
-    .. image:: https://img.shields.io/coveralls/github/<USER>/coding-exercise/main.svg
-        :alt: Coveralls
-        :target: https://coveralls.io/r/<USER>/coding-exercise
-    .. image:: https://img.shields.io/pypi/v/coding-exercise.svg
-        :alt: PyPI-Server
-        :target: https://pypi.org/project/coding-exercise/
-    .. image:: https://img.shields.io/conda/vn/conda-forge/coding-exercise.svg
-        :alt: Conda-Forge
-        :target: https://anaconda.org/conda-forge/coding-exercise
-    .. image:: https://pepy.tech/badge/coding-exercise/month
-        :alt: Monthly Downloads
-        :target: https://pepy.tech/project/coding-exercise
-    .. image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter
-        :alt: Twitter
-        :target: https://twitter.com/coding-exercise
-
-.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
-    :alt: Project generated with PyScaffold
-    :target: https://pyscaffold.org/
-
-|
-
-===============
-coding-exercise
-===============
-
-
-    Add a short description here!
-
-
-A longer description of your project goes here...
-
-
-.. _pyscaffold-notes:
-
-Note
+Test
 ====
 
-This project has been set up using PyScaffold 4.5. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
+This project uses `tox <https://tox.wiki/>`_ to automate testing. To run the tests do the following::
+
+    tox
+
+Development Environment
+=======================
+
+This project includes a `Vagrant <https://www.vagrantup.com/>`_ development environment for convenience.
+
+If you decide to leverage it, you can do the following::
+
+    colima start
+    vagrant up
+    vagrant ssh
+    cd /vagrant
+
+Tested Configuration
+--------------------
+
+========== =======
+---------- -------
+Technology Version
+========== =======
+os         ``macOS 14.5``
+vagrant    ``2.4.1``
+ansible    ``2.17.1``
+colima     ``0.6.9``
+docker     ``27.0.3``
+========== =======
