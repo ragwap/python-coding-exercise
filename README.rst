@@ -22,8 +22,22 @@ The project includes the following domain model::
 This class has the following attributes provided as constructor arguments:
 
 * ``length:int``
+* ``name:str``
 
-The new behaviour we are asking you to write is to create a class that will split a cable into ``n`` number of parts.
+The new behaviour we are asking you to write is to complete a ``class`` that will split a cable ``n`` times, i.e. if you have::
+
+    given_cable = Cable(10, "coconuts")
+    result = Splitter().split(given_cable, 1))
+
+The ``result`` will be an array with two ``Cable`` with a length of ``5``.
+
+Additionally, the first ``Cable`` will have a ``name`` of ``"coconuts-0"``, the second a ``name`` of ``"coconuts-1"``.
+
+The number in the name should be right-justified and zero-filled e.g. if the ``result`` ``list`` has a length of ``> 9`` and ``< 100``, then the ``name`` would take the form::
+
+    "coconuts-00"
+    "coconuts-01"
+    ...
 
 An empty implementation has been put in place in the following::
 
