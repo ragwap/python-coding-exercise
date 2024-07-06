@@ -50,6 +50,10 @@ def test_should_not_equal_if_names_differ():
     )
 
 
+def test_should_not_equal_if_not_a_cable():
+    assert_that(Cable(101, "coconuts")).is_not_equal_to("bob")
+
+
 def test_should_have_name():
     given_name = "coconuts"
 
