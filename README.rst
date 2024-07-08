@@ -24,12 +24,19 @@ This class has the following attributes provided as constructor arguments:
 * ``length:int``
 * ``name:str``
 
-The new behaviour we are asking you to write is to complete a ``class`` that will split a cable ``n`` times, i.e. if you have::
+The new behaviour we are asking you to write is to complete a ``class`` that will split a cable ``n`` times into equal integer lengths, i.e. if you have::
 
     given_cable = Cable(10, "coconuts")
     result = Splitter().split(given_cable, 1))
 
 The ``result`` will be an array with two ``Cable`` with a length of ``5``.
+
+Any remainder will also be split into ``Cable``, with their lengths being the same as the existing splits while possible e.g. if we have a cable with a length of 5 and split it twice we get:
+
+* ``3`` new ``Cable`` of length ``1``
+* the remaining length of ``2`` split into two ``Cable`` of length ``1``
+
+  + if the initial splits were of length ``3`` and the remainder was ``4``, the remainder would be split into a ``3`` length and ``1`` length ``Cable``
 
 Additionally, the first ``Cable`` will have a ``name`` of ``"coconuts-0"``, the second a ``name`` of ``"coconuts-1"``.
 
@@ -46,12 +53,6 @@ An empty implementation has been put in place in the following::
 The associated tests are in::
 
     ./tests/coding_exercise/application/test_splitter.py
-
-The rules are:
-
-* lengths of the returned ``Cable`` are to be equal
-
-  + if the length cannot be split equally the last ``Cable`` in the result should be longer
 
 Test
 ====
