@@ -34,7 +34,7 @@ The ``result`` will be an array with two ``Cable`` with a length of ``5``.
 Any remainder will also be split into ``Cable``, with their lengths being the same as the existing splits while possible e.g. if we have a cable with a length of 5 and split it twice we get:
 
 * ``3`` new ``Cable`` of length ``1``
-* the remaining length of ``2`` split into two ``Cable`` of length ``1``
+* the remaining length of ``2`` is to be split into two ``Cable`` of length ``1``
 
   + if the initial splits were of length ``3`` and the remainder was ``4``, the remainder would be split into a ``3`` length and ``1`` length ``Cable``
 
