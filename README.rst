@@ -38,6 +38,18 @@ Any remainder will also be split into ``Cable``, with their lengths being the sa
 
   + if the initial splits were of length ``3`` and the remainder was ``4``, the remainder would be split into a ``3`` length and ``1`` length ``Cable``
 
+The following are the minimum/maximum values for ``length`` and ``times`` (all inclusive i.e. these values are allowed):
+
+* times:
+
+  + minimum: ``1``
+  + maximum: ``64``
+
+* length:
+
+  + minimum: ``2``
+  + maximum: ``1024``
+
 Additionally, the first ``Cable`` will have a ``name`` of ``"coconuts-0"``, the second a ``name`` of ``"coconuts-1"``.
 
 The number in the name should be right-justified and zero-filled e.g. if the ``result`` ``list`` has a length of ``> 9`` and ``< 100``, then the ``name`` would take the form::
