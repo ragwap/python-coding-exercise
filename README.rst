@@ -68,6 +68,12 @@ The associated tests are in::
 
     ./tests/coding_exercise/application/test_splitter.py
 
+The signature of the ``split`` method in ``src/coding_exercise/application/splitter.py`` is required by an external consumer and should not be modified i.e.::
+
+    def split(self, cable: Cable, times: int) -> list[Cable]:
+
+The same is true of the ``Cable`` class in ``src/coding_exercise/domain/model/cable.py`` i.e. do not modify this file or the associated tests in ``tests/coding_exercise/domain/model/test_cable.py``.
+
 Test
 ====
 
