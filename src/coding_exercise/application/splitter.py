@@ -11,4 +11,4 @@ class Splitter:
     def split(self, cable: Cable, times: int) -> list[Cable]:
         self.__validate()
 
-        return None
+        return []
