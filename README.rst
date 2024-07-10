@@ -82,7 +82,6 @@ This project includes a `Vagrant <https://www.vagrantup.com/>`_ development envi
 
 If you decide to leverage it, you can do the following::
 
-    colima start
     vagrant up
     vagrant ssh
     cd /vagrant
