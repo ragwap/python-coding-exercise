@@ -81,6 +81,16 @@ This project uses `tox <https://tox.wiki/>`_ to automate testing. To run the tes
 
     tox
 
+Tested Configuration
+--------------------
+
+========== =======
+Technology Version
+========== =======
+python     ``3.11.2``
+tox        ``3.28.0``
+========== =======
+
 Development Environment
 =======================
 
