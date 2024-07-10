@@ -50,6 +50,8 @@ The following are the minimum/maximum values for ``length`` and ``times`` (all i
   + minimum: ``2``
   + maximum: ``1024``
 
+Any request that does not adhere to the constraints is to to raise a ``ValueError``, as is any request that cannot be enacted e.g. a request to split a ``Cable`` a number of times that would result in less than ``1`` for the lengths.
+
 Additionally, the first ``Cable`` will have a ``name`` of ``"coconuts-0"``, the second a ``name`` of ``"coconuts-1"``.
 
 The number in the name should be right-justified and zero-filled e.g. if the ``result`` ``list`` has a length of ``> 9`` and ``< 100``, then the ``name`` would take the form::
