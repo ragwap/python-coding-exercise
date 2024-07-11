@@ -13,6 +13,8 @@ You can share the solution by either:
 The Problem
 ===========
 
+We want the ability to split a Cable into even integer lengths, with any remainder being of the same length while possible.
+
 We have provided a basic project with some domain models for you to use to deliver a new piece of behaviour.
 
 The project includes the following domain model::
