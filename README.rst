@@ -13,7 +13,7 @@ You can share the solution by either:
 The Problem
 ===========
 
-We want the ability to split a Cable into even integer lengths, with any remainder being of the same length while possible.
+We want the ability to split a Cable `n` times into the longest even integer lengths possible; with any remainder to be cut into ``Cable`` of that same length until not possible.
 
 We have provided a basic project with some domain models for you to use to deliver a new piece of behaviour.
 
