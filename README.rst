@@ -31,10 +31,15 @@ The new behaviour we are asking you to write is to complete a ``class`` that wil
 
 The ``result`` will be an array with two ``Cable`` with a length of ``5``.
 
-Any remainder will also be split into ``Cable``, with their lengths being the same as the existing splits while possible e.g. if we have a cable with a length of 5 and split it twice we get:
+Any remainder will also be split into ``Cable``, with their lengths being the same as the existing splits while possible e.g. if we have a cable with a length of 5 and split it twice::
 
-* ``3`` new ``Cable`` of length ``1``
-* the remaining length of ``2`` is to be split into two ``Cable`` of length ``1``
+  given_cable = Cable(5, "coconuts")
+  result = Splitter().split(given_cable, 2))
+
+The ``result`` will be an array with five ``Cable`` with lengths of ``1``.
+
+* the three ``Cable`` that are the longest ``int`` lengths that can be done with the two cuts
+* the remaining length of ``2`` split into lengths of ``1``
 
   + if the initial splits were of length ``3`` and the remainder was ``4``, the remainder would be split into a ``3`` length and ``1`` length ``Cable``
 
