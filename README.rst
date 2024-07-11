@@ -15,18 +15,7 @@ The Problem
 
 We want the ability to split a Cable `n` times into the longest even integer lengths possible; with any remainder to be cut into ``Cable`` of that same length until not possible.
 
-We have provided a basic project with some domain models for you to use to deliver a new piece of behaviour.
-
-The project includes the following domain model::
-
-    ./src/coding_exercise/domain/model/cable.py
-
-This class has the following attributes provided as constructor arguments:
-
-* ``length:int``
-* ``name:str``
-
-The new behaviour we are asking you to write is to complete a ``class`` that will split a cable ``n`` times into equal integer lengths, i.e. if you have::
+The new behaviour we are asking you to write is to complete a ``class`` that will split a cable ``n`` times into equal integer lengths as cited above, i.e. if you have::
 
     given_cable = Cable(10, "coconuts")
     result = Splitter().split(given_cable, 1))
@@ -43,9 +32,9 @@ The ``result`` will be an array with five ``Cable`` with lengths of ``1``.
 * the three ``Cable`` that are the longest ``int`` lengths that can be done with the two cuts
 * the remaining length of ``2`` split into lengths of ``1``
 
-  + if the initial splits were of length ``3`` and the remainder was ``4``, the remainder would be split into a ``3`` length and ``1`` length ``Cable``
+  + **NOTE:** if the initial splits were of length ``3`` and the remainder was ``4``, the remainder would be split into a ``3`` length and ``1`` length ``Cable``
 
-The following are the minimum/maximum values for ``length`` and ``times`` (all inclusive i.e. these values are allowed):
+The following are the minimum/maximum values for ``Cable.length`` and ``times`` (all inclusive i.e. these values are allowed):
 
 * times:
 
@@ -66,6 +55,20 @@ The number in the name should be right-justified and zero-filled e.g. if the ``r
     "coconuts-00"
     "coconuts-01"
     ...
+
+The Solution
+============
+
+We have provided a basic project with some domain models for you to use to deliver a new piece of behaviour.
+
+The project includes the following domain model::
+
+    ./src/coding_exercise/domain/model/cable.py
+
+This class has the following attributes provided as constructor arguments:
+
+* ``length:int``
+* ``name:str``
 
 An empty implementation has been put in place in the following::
 
