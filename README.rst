@@ -13,7 +13,7 @@ You can share the solution by either:
 The Problem
 ===========
 
-We want the ability to split a Cable `n` times into the longest even integer lengths possible; with any remainder to be cut into ``Cable`` of that same length until not possible.
+We want the ability to split a cable ``n`` times into the longest equal integer length cables possible; with any remaining cable to be cut into that same length until not possible.
 
 The new behaviour we are asking you to write is to complete a ``class`` that will split a cable ``n`` times into equal integer lengths as cited above, i.e. if you have::
 
