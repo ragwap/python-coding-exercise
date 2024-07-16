@@ -57,7 +57,6 @@ The number in the name should be right-justified and zero-filled e.g. if the nam
     ...
     "coconuts-09"
     "coconuts-10"
-    ...
 
 The Solution
 ============
