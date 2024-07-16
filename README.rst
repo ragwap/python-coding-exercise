@@ -50,10 +50,13 @@ Any request that does not adhere to the constraints is to to raise a ``ValueErro
 
 Additionally, the first ``Cable`` will have a ``name`` of ``"coconuts-0"``, the second a ``name`` of ``"coconuts-1"``.
 
-The number in the name should be right-justified and zero-filled e.g. if the ``result`` ``list`` has a length of ``> 9`` and ``< 100``, then the ``name`` would take the form::
+The number in the name should be right-justified and zero-filled e.g. if the names end up with numbers ``> 9`` and ``< 100``, then the ``name`` would take the form::
 
     "coconuts-00"
     "coconuts-01"
+    ...
+    "coconuts-09"
+    "coconuts-10"
     ...
 
 The Solution
