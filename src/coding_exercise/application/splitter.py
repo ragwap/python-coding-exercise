@@ -1,6 +1,11 @@
 from coding_exercise.domain.model.cable import Cable
 import math
 
+# Define ranges for times and lengths globally
+MIN_TIMES = 1
+MAX_TIMES = 64
+MIN_LEN = 2
+MAX_LEN = 1024
 
 class Splitter:
 
@@ -11,9 +16,9 @@ class Splitter:
             raise ValueError("Invalid input types")
         
         # Checks if times and cable lenghts are within the specified ranges
-        if times < 1 or times > 64:
+        if times < MIN_TIMES or times > MAX_TIMES:
             raise ValueError("Number of splits should be in range 1 to 64 inclusive")
-        if cable.length < 2 or cable.length > 1024:
+        if cable.length < MIN_LEN or cable.length > MAX_LEN:
             raise ValueError("Cable length should be in range 2 to 1024 inclusive")
         
         # Checks if a cable can be split into equal/valid lenghts with the given times
@@ -43,12 +48,16 @@ class Splitter:
 
             counter += 1
 
+        # If no remainder array: split_length can be taken into account
         if not split_arr:
             gcd = split_length
             res_range = total_splits
         else:
-            gcd = math.gcd(*split_arr)
-            res_range = cable.length // gcd    
+            gcd = math.gcd(*split_arr) # Else: the greatest common divisor should be the length of each cable
+            res_range = cable.length // gcd # Calculating the number of cables
 
-        result = [Cable(gcd, f"{cable.name}-{i:02d}") for i in range(res_range)]
+        # Find the number of digits in the maximum value to fill zeros
+        padding = len(str(res_range))
+
+        result = [Cable(gcd, f"{cable.name}-{i:0{padding}d}") for i in range(res_range)]
         return result
